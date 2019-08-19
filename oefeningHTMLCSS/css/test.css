@@ -1,0 +1,210 @@
+.container {
+    background-color: lightgrey;
+    width: 100%;
+    position: relative;
+}
+
+
+.mobileNav {
+    cursor: pointer;
+    width: 100%;
+    height: 60px;
+    background: tomato;
+}
+
+.mobileNav img {
+    height: 60px;
+    width: auto;
+    margin-left: auto;
+    display: block;
+}
+
+.logo img {
+    display: block;
+    margin: 0 auto;
+}
+
+.topNav {
+
+    height: 100%;
+    flex: 1 0 33%;
+}
+
+.topNav ul {
+    list-style-type: none;
+}
+
+.topNav li a {
+    text-decoration: none;
+    display: block;
+}
+
+
+
+.heroContact {
+    
+    background-image: url("../images/contact.jpg");
+    background-size: cover;
+    /*background-position: center;*/
+    min-height: 300px;
+    flex: 1 0 66%;
+
+
+}
+
+.bar1 {
+    
+    border: 3px solid black;
+    display: flex;
+    min-height: 300px;
+    width: 100%;
+}
+
+.bar2 {
+    background-color: green;
+    border: 3px solid black;
+    
+    min-height: 300px;
+    border: 3px solid red;
+}
+
+.contactForm input {
+    display: block;
+    width: 100%;
+    height: 30px;
+}
+
+.contactForm input[type="textfield"] {
+    height: 80px;
+}
+
+.openingsuren table {
+    width: 100%;
+}
+
+.contactgegevens img {
+    width: 100%;
+    display: block;
+
+}
+
+.contactgegevens a {
+    display: block;
+    text-decoration: none;
+}
+
+.route iframe {
+    width: 100%;
+}
+
+footer {
+    height: 60px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+
+    .bar1 {
+        position: absolute;
+        bottom: 2000px;
+
+    }
+
+    .contactgegevens {
+        width: 100%;
+
+    }
+
+
+    .contactForm {
+        width: 100%;
+
+    }
+
+    .openingsuren {
+        width: 100%;
+
+    }
+
+}
+
+@media screen and (min-width: 600px) {
+    .bar1 {
+        position: relative;
+        bottom: 0px;
+
+    }
+
+    .bar2 {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    body {
+        background: red;
+    }
+
+    .mobileNav {
+        position: absolute;
+        bottom: 2000px;
+
+    }
+
+    .heroContact {
+        background-image: url('../images/contact.jpg');
+        background-position: center;
+        background-size: cover;
+        height: 100%;
+    }
+
+    .inbar2 {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 70%;
+    }
+
+    .contactgegevens {
+        flex-basis: 33%;
+
+    }
+
+
+
+}
+
+@media screen and (min-width: 900px) {
+    .gridcontainer {
+        background: yellow;
+
+    }
+
+
+    .contactgegevens {
+
+        flex-basis: 33%;
+    }
+
+    .inbar2 {
+
+        flex-basis: 66%;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .contactForm {
+        flex-basis: 50%;
+
+
+    }
+
+    .openingsuren {
+        flex-basis: 50%;
+
+    }
+
+}
